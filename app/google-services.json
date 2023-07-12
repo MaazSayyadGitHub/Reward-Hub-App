@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1027174240652",
+    "project_id": "rewardhub-43ccc",
+    "storage_bucket": "rewardhub-43ccc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027174240652:android:ca16bfec3e319d2e0086a9",
+        "android_client_info": {
+          "package_name": "com.maaz.rewardhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027174240652-lbnoat4dj6jc2scge4a0vm7c8u0fmpu5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq9UAoNqqY6biS8fV0BUKwDOfQJJXQ-u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027174240652-lbnoat4dj6jc2scge4a0vm7c8u0fmpu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

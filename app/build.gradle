@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.maaz.rewardhub'
+    compileSdk 33
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.maaz.rewardhub"
+        minSdk 21
+        targetSdk 33
+        versionCode 4
+        versionName "1.3"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // bottom bar
+    implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:31.2.1')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.3'
+    // realtime database
+    implementation 'com.google.firebase:firebase-database:20.0.2'
+
+    // glide library
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    // scratch card
+    implementation 'in.codeshuffle.scratchcardlayout:ScratchCardLayout:1.0.8'
+
+    // App Lovin
+    implementation 'com.applovin:applovin-sdk:11.8.2'
+    // android advertising id dependency
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+// using this we can control ads, to show which ads and what category of ads we want to show.
+apply plugin: 'applovin-quality-service'
+applovin {
+    apiKey "psufCxOeibUG6q1BKFP6lTb36CEMy5xmCb1IxqHUthQ8JD4_kxvK54FAEF8PPhysB3PZaHevwtvrFlUaxicVES"
+}
